@@ -2,7 +2,7 @@
 @author Helder Vieira Medeiros
 @since 10/12/2025
 @version 1.0	
-Exemplo de relatório unificado para SmartView para Grupo de empresas
+Exemplo de relatório unificado de títulos a pagar para SmartView para Grupo de empresas
 */
 SELECT
     'Emp01' AS empresa,
