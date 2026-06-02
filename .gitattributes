@@ -1,3 +1,3 @@
-*.prw linguist-language=Clipper
-*.tlpp linguist-language=Clipper
-*.ch linguist-language=Clipper
+*.prw linguist-language=cpp
+*.tlpp linguist-language=cpp
+*.ch linguist-language=cpp
