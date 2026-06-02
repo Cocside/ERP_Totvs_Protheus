@@ -1,5 +1,5 @@
 #include 'Totvs.ch'
-//-------------------------------------------------------------------
+//------------------------------------------------------------------
 /*/{Protheus.doc} MT410TOK & MRatLOk
 VALIDA A INCLUSÃO DO PEDIDO DE VENDA | VALIDA O PREENCHIMENTO DE RATEIO DENTRO DO PEDIDO DE VENDA PARA TES 509 E 513
 
@@ -7,7 +7,7 @@ VALIDA A INCLUSÃO DO PEDIDO DE VENDA | VALIDA O PREENCHIMENTO DE RATEIO DENTRO 
 @since 24/04/2026
 @version 1.0
 /*/
-//-------------------------------------------------------------------
+//------------------------------------------------------------------
 User Function MT410TOK()
     Local lRet      := .T.
     Local nI        := 0
