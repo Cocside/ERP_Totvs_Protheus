@@ -6,7 +6,8 @@
 #include "tlpp-rest.th"
 
 //-------------------------------------------------------------------
-/*/{Protheus.doc} PONTO
+/*
+{Protheus.doc} PONTO
 RELATÓRIO DE BANCO DE HORAS
 
 @author Helder Vieira Medeiros
