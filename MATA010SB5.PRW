@@ -1,5 +1,5 @@
 #include 'Protheus.ch'
-/*/
+/*
 //-------------------------------------------------------------------
 {Protheus.doc} U_GravaSB5()
 -Inclui informações adicionais na tabela SB5 a partir da importação da SB1
@@ -8,7 +8,7 @@
 @since 27/05/2026
 @version 1.0
 //-------------------------------------------------------------------
-/*/
+*/
 User Function GravaSB5()
     Local aArea   := GetArea()
     Local cCod    := ""
