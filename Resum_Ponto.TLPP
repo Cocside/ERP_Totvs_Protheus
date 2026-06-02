@@ -12,7 +12,7 @@ RELATÓRIO DE BANCO DE HORAS
 @author Helder Vieira Medeiros
 @since 17/12/2025
 @version 1.0
-/*/
+*/
 //-------------------------------------------------------------------
 namespace ponto.resultados.resultados
 //declara o ambiente, as tabelas a serem utilizadas e o nome do relatório
