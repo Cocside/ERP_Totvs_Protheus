@@ -1,13 +1,13 @@
 #Include 'Protheus.ch'
 /*/
-//-------------------------------------------------------------------
+//--------------------------------------------------------------------
 {Protheus.doc} U_GravaSB5()
--Inclui informações adicionais na tabela SB5 a partir da importação da SB1
+-Inclui informaÃ§Ãµes adicionais na tabela SB5 a partir da importaÃ§Ã£o da SB1
 
 @author Helder Vieira Medeiros
 @since 27/05/2026
 @version 1.0
-//-------------------------------------------------------------------
+//--------------------------------------------------------------------
 /*/
 User Function GravaSB5()
     Local aArea   := GetArea()
@@ -15,12 +15,12 @@ User Function GravaSB5()
     Local cCeme   := ""
     Local cNbs    := ""
 
-    // 1. Pega o CÓDIGO DO PRODUTO direto da variável do MILE (Linha atual do TXT)
+    // 1. Pega o CÃ“DIGO DO PRODUTO direto da variÃ¡vel do MILE (Linha atual do TXT)
     If Type("M->CB1COD") <> "U"
         cCod := M->CB1COD
     EndIf
 
-    // 2. Lê as outras variáveis do MILE
+    // 2. LÃª as outras variÃ¡veis do MILE
     If Type("M->CB5CEME") <> "U"
         cCeme := M->CB5CEME
     EndIf
@@ -29,12 +29,12 @@ User Function GravaSB5()
         cNbs := M->CB5NBS
     EndIf
 
-    // 3. Só grava se tiver código de produto preenchido
+    // 3. SÃ³ grava se tiver cÃ³digo de produto preenchido
     If !Empty(cCod)
         DbSelectArea("SB5")
         DbSetOrder(1) // B5_FILIAL + B5_COD
         
-        // Se a SB5 para este produto ainda não existir, cria uma nova. Caso contrário, altera a existente.
+        // Se a SB5 para este produto ainda nÃ£o existir, cria uma nova. Caso contrÃ¡rio, altera a existente.
         If !DbSeek(xFilial("SB5") + cCod)
             RecLock("SB5", .T.)
             SB5->B5_FILIAL := xFilial("SB5")
@@ -43,7 +43,7 @@ User Function GravaSB5()
             RecLock("SB5", .F.)
         EndIf
         
-        // Grava as informações nas colunas adicionais
+        // Grava as informaÃ§Ãµes nas colunas adicionais
         SB5->B5_CEME := cCeme
         SB5->B5_NBS  := cNbs
         
