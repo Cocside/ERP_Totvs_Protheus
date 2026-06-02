@@ -1,3 +1,3 @@
-*.prw linguist-language=cpp
-*.tlpp linguist-language=cpp
-*.ch linguist-language=cpp
+*.prw linguist-language=c
+*.tlpp linguist-language=c
+*.ch linguist-language=c
