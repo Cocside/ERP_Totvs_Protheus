@@ -1,7 +1,7 @@
 #Include 'Protheus.ch'
 #Include "Totvs.ch"
 #Include "FWMVCDef.ch"
-/*/
+/*
 //-------------------------------------------------------------------
 {Protheus.doc} U_GravaSB5()
 -Schedule para gerar a planilha de DRE
@@ -10,7 +10,7 @@
 @since 27/05/2026
 @version 1.0
 //-------------------------------------------------------------------
-/*/
+*/
 Function U_SCHDRE()
 	Local cQuery    := ""
 	Local cPath     := " " //<-caminho da pasta
